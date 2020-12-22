@@ -68,8 +68,7 @@
 	\centering
 	\vspace{2cm}
 
-	% Titles
-	{\large Project \par}
+	{\large Project Report \par}
 	\vspace{3cm}
 	{\Huge \textbf{Evaluation of different classification \\ algorithms for COVID-19 Pandemic \\ Tweets}} \\
 	\vspace{1cm}
@@ -82,12 +81,10 @@
     
     \vspace{2cm}
     
-	% Information about the University
 	{\normalsize Division of Statistics and Machine Learning \\ 
 		Department of Computer Science \\
 		Linköping University \par}
 		
-	% Set the date
 	{\normalsize 01-2021 \par}
 	\vspace{2cm}
 	
@@ -100,7 +97,8 @@
 \clearpage
 
 \hypertarget{abstract}{%
-\section{Abstract}\label{abstract}}
+\section*{Abstract}\label{abstract}}
+\addcontentsline{toc}{section}{Abstract}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor
 efficitur nisi ac ultricies. Nulla et viverra diam, ut interdum nibh.
@@ -118,10 +116,17 @@ lacinia lectus. Etiam sodales fermentum euismod. Nulla facilisi. Ut
 laoreet gravida nisi, at imperdiet magna vestibulum nec. Fusce rutrum
 ante magna, ut pulvinar sapien mollis posuere.
 
+GitHub repository:
+\url{https://github.com/steliossid/covid19-classification}
+
 \newpage
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
+
+\emph{Introduce the task or research question that you have addressed in
+your project. What were you trying to do? Why did you choose this
+project?}
 
 Integer pulvinar nulla ac quam ultricies, a ornare lorem sagittis. Morbi
 quis nisl vulputate, maximus mauris vel, tincidunt ipsum. Orci varius
@@ -159,34 +164,15 @@ lectus. Fusce tempor est justo, nec laoreet dui consectetur porttitor.
 Vivamus consectetur tempus mattis. Vestibulum ornare tincidunt
 consectetur.
 
-\newpage
+\hypertarget{theory}{%
+\section{Theory}\label{theory}}
 
-\hypertarget{data}{%
-\section{Data}\label{data}}
+\emph{Present relevant theoretical background, and in particular the
+models that you have used. Where appropriate, use mathematical
+formulas.}
 
-Mauris vestibulum venenatis turpis eu blandit. Sed est tellus, auctor id
-tortor a, pellentesque consequat quam. Phasellus efficitur elit et
-rutrum egestas. Phasellus sagittis leo non sollicitudin tincidunt.
-Vivamus rhoncus iaculis aliquam. Proin pretium, risus ut tempor
-consectetur, nunc augue pretium est, at cursus velit justo vel arcu.
-Proin dictum ligula a commodo rutrum.
-
-\hypertarget{data-preprocessing}{%
-\subsection{Data Preprocessing}\label{data-preprocessing}}
-
-Vestibulum non eros tortor. Nullam arcu ante, placerat non rutrum vitae,
-blandit eget elit. Suspendisse potenti. Interdum et malesuada fames ac
-ante ipsum primis in faucibus. Sed placerat euismod est nec vulputate.
-Ut id metus vitae purus pharetra placerat et et sapien. Maecenas lacinia
-scelerisque leo nec facilisis. Etiam ut mollis dolor. Sed id bibendum
-elit, non ullamcorper nisl. Morbi sodales mollis commodo. Morbi cursus
-odio ut mattis accumsan. Aenean ac felis dignissim, luctus est sed,
-pulvinar velit. Integer turpis elit, posuere nec erat ac, hendrerit
-tristique ligula.
-
-\hypertarget{natural-language-processing-nlp}{%
-\subsection{Natural Language Processing
-(NLP)}\label{natural-language-processing-nlp}}
+\hypertarget{multinomial-naive-bayes}{%
+\subsection{Multinomial Naive Bayes}\label{multinomial-naive-bayes}}
 
 Phasellus ac consequat nibh, vel condimentum quam. Morbi in est ut odio
 pharetra feugiat a quis nulla. Donec rhoncus eget nunc vitae
@@ -198,66 +184,172 @@ cubilia curae; Nam gravida consectetur rhoncus. Vivamus suscipit ut
 nulla non vestibulum. Phasellus maximus nisl non odio porta, vel
 volutpat ligula volutpat.
 
-Vestibulum eu sapien ante. Maecenas lorem libero, tincidunt ut accumsan
-eget, sodales vitae diam. Pellentesque lobortis aliquet ligula, et
-condimentum tortor finibus a. Etiam ullamcorper enim eget sem fringilla,
-at viverra ante tincidunt. Fusce diam felis, cursus in urna tincidunt,
-accumsan pretium est. Duis vulputate tellus a ultrices varius. Integer
-accumsan orci ac risus dignissim eleifend. Ut hendrerit ligula ac tellus
-luctus molestie. Pellentesque consequat egestas leo, vitae vulputate
-tellus viverra ac. Nunc tincidunt fermentum sagittis. Integer mi erat,
-rhoncus at sem eu, dapibus malesuada leo. Mauris diam nisi, sagittis eu
-fermentum eu, venenatis non tortor. Suspendisse et viverra felis, non
-posuere nisi. Praesent congue libero quis augue imperdiet euismod.
-
-\newpage
-
-\hypertarget{statistics}{%
-\section{Statistics}\label{statistics}}
-
-\hypertarget{number-of-words-in-tweet}{%
-\subsection{Number of words in tweet}\label{number-of-words-in-tweet}}
-
-\hypertarget{wordclouds}{%
-\subsection{Wordclouds}\label{wordclouds}}
-
-\hypertarget{uni-grams}{%
-\subsection{Uni-grams}\label{uni-grams}}
-
-\hypertarget{bi-grams}{%
-\subsection{Bi-grams}\label{bi-grams}}
-
-\hypertarget{classification-methods}{%
-\section{Classification methods}\label{classification-methods}}
-
-\hypertarget{multinomial-naive-bayes}{%
-\subsection{Multinomial Naive Bayes}\label{multinomial-naive-bayes}}
-
 \hypertarget{logistic-regression}{%
 \subsection{Logistic Regression}\label{logistic-regression}}
+
+Phasellus ac consequat nibh, vel condimentum quam. Morbi in est ut odio
+pharetra feugiat a quis nulla. Donec rhoncus eget nunc vitae
+ullamcorper. Sed quis bibendum ex. Nullam non augue nec leo facilisis
+facilisis ullamcorper non turpis. Nullam rhoncus, ipsum non efficitur
+viverra, velit ligula hendrerit felis, porta feugiat eros urna ac justo.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+cubilia curae; Nam gravida consectetur rhoncus. Vivamus suscipit ut
+nulla non vestibulum. Phasellus maximus nisl non odio porta, vel
+volutpat ligula volutpat.
 
 \hypertarget{random-forest-classifier}{%
 \subsection{Random Forest Classifier}\label{random-forest-classifier}}
 
+Phasellus ac consequat nibh, vel condimentum quam. Morbi in est ut odio
+pharetra feugiat a quis nulla. Donec rhoncus eget nunc vitae
+ullamcorper. Sed quis bibendum ex. Nullam non augue nec leo facilisis
+facilisis ullamcorper non turpis. Nullam rhoncus, ipsum non efficitur
+viverra, velit ligula hendrerit felis, porta feugiat eros urna ac justo.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+cubilia curae; Nam gravida consectetur rhoncus. Vivamus suscipit ut
+nulla non vestibulum. Phasellus maximus nisl non odio porta, vel
+volutpat ligula volutpat.
+
 \hypertarget{decision-tree-classifier}{%
 \subsection{Decision Tree Classifier}\label{decision-tree-classifier}}
+
+Phasellus ac consequat nibh, vel condimentum quam. Morbi in est ut odio
+pharetra feugiat a quis nulla. Donec rhoncus eget nunc vitae
+ullamcorper. Sed quis bibendum ex. Nullam non augue nec leo facilisis
+facilisis ullamcorper non turpis. Nullam rhoncus, ipsum non efficitur
+viverra, velit ligula hendrerit felis, porta feugiat eros urna ac justo.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+cubilia curae; Nam gravida consectetur rhoncus. Vivamus suscipit ut
+nulla non vestibulum. Phasellus maximus nisl non odio porta, vel
+volutpat ligula volutpat.
 
 \hypertarget{linear-support-vector-classifier-svc}{%
 \subsection{Linear Support Vector Classifier
 (SVC)}\label{linear-support-vector-classifier-svc}}
 
+Phasellus ac consequat nibh, vel condimentum quam. Morbi in est ut odio
+pharetra feugiat a quis nulla. Donec rhoncus eget nunc vitae
+ullamcorper. Sed quis bibendum ex. Nullam non augue nec leo facilisis
+facilisis ullamcorper non turpis. Nullam rhoncus, ipsum non efficitur
+viverra, velit ligula hendrerit felis, porta feugiat eros urna ac justo.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+cubilia curae; Nam gravida consectetur rhoncus. Vivamus suscipit ut
+nulla non vestibulum. Phasellus maximus nisl non odio porta, vel
+volutpat ligula volutpat.
+
 \hypertarget{stochastic-gradient-descent-sgd-classifier}{%
 \subsection{Stochastic Gradient Descent (SGD)
 Classifier}\label{stochastic-gradient-descent-sgd-classifier}}
+
+Phasellus ac consequat nibh, vel condimentum quam. Morbi in est ut odio
+pharetra feugiat a quis nulla. Donec rhoncus eget nunc vitae
+ullamcorper. Sed quis bibendum ex. Nullam non augue nec leo facilisis
+facilisis ullamcorper non turpis. Nullam rhoncus, ipsum non efficitur
+viverra, velit ligula hendrerit felis, porta feugiat eros urna ac justo.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+cubilia curae; Nam gravida consectetur rhoncus. Vivamus suscipit ut
+nulla non vestibulum. Phasellus maximus nisl non odio porta, vel
+volutpat ligula volutpat.
 
 \hypertarget{extreme-gradient-boosting-xgb-classifier}{%
 \subsection{Extreme Gradient Boosting (XGB)
 Classifier}\label{extreme-gradient-boosting-xgb-classifier}}
 
+Phasellus ac consequat nibh, vel condimentum quam. Morbi in est ut odio
+pharetra feugiat a quis nulla. Donec rhoncus eget nunc vitae
+ullamcorper. Sed quis bibendum ex. Nullam non augue nec leo facilisis
+facilisis ullamcorper non turpis. Nullam rhoncus, ipsum non efficitur
+viverra, velit ligula hendrerit felis, porta feugiat eros urna ac justo.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+cubilia curae; Nam gravida consectetur rhoncus. Vivamus suscipit ut
+nulla non vestibulum. Phasellus maximus nisl non odio porta, vel
+volutpat ligula volutpat.
+
 \hypertarget{neural-networks}{%
 \subsection{Neural Networks}\label{neural-networks}}
 
+Phasellus ac consequat nibh, vel condimentum quam. Morbi in est ut odio
+pharetra feugiat a quis nulla. Donec rhoncus eget nunc vitae
+ullamcorper. Sed quis bibendum ex. Nullam non augue nec leo facilisis
+facilisis ullamcorper non turpis. Nullam rhoncus, ipsum non efficitur
+viverra, velit ligula hendrerit felis, porta feugiat eros urna ac justo.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+cubilia curae; Nam gravida consectetur rhoncus. Vivamus suscipit ut
+nulla non vestibulum. Phasellus maximus nisl non odio porta, vel
+volutpat ligula volutpat.
+
+\hypertarget{data}{%
+\section{Data}\label{data}}
+
+\emph{Present your data. What information does it contain? Where did you
+get it from? What preprocessing did you do, if any?}
+
+Vestibulum non eros tortor. Nullam arcu ante, placerat non rutrum vitae,
+blandit eget elit. Suspendisse potenti. Interdum et malesuada fames ac
+ante ipsum primis in faucibus. Sed placerat euismod est nec vulputate.
+Ut id metus vitae purus pharetra placerat et et sapien. Maecenas lacinia
+scelerisque leo nec facilisis. Etiam ut mollis dolor. Sed id bibendum
+elit, non ullamcorper nisl. Morbi sodales mollis commodo. Morbi cursus
+odio ut mattis accumsan. Aenean ac felis dignissim, luctus est sed,
+pulvinar velit. Integer turpis elit, posuere nec erat ac, hendrerit
+tristique ligula.
+
+\hypertarget{method}{%
+\section{Method}\label{method}}
+
+\emph{Explain how you carried out your study. Aim to be detailed enough
+for others to reproduce your results.}
+
+Mauris vestibulum venenatis turpis eu blandit. Sed est tellus, auctor id
+tortor a, pellentesque consequat quam. Phasellus efficitur elit et
+rutrum egestas. Phasellus sagittis leo non sollicitudin tincidunt.
+Vivamus rhoncus iaculis aliquam. Proin pretium, risus ut tempor
+consectetur, nunc augue pretium est, at cursus velit justo vel arcu.
+Proin dictum ligula a commodo rutrum.
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\emph{Present your results in an objective way. Use tables and charts,
+but do not forget to also include a summary in text form. Do not
+interpret your results.}
+
+\includegraphics{report_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+\emph{Analyse your results and discuss the possibilities and limitations
+of your technical approach. Compare your study to related work.}
+
+Phasellus ac consequat nibh, vel condimentum quam. Morbi in est ut odio
+pharetra feugiat a quis nulla. Donec rhoncus eget nunc vitae
+ullamcorper. Sed quis bibendum ex. Nullam non augue nec leo facilisis
+facilisis ullamcorper non turpis. Nullam rhoncus, ipsum non efficitur
+viverra, velit ligula hendrerit felis, porta feugiat eros urna ac justo.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+cubilia curae; Nam gravida consectetur rhoncus. Vivamus suscipit ut
+nulla non vestibulum. Phasellus maximus nisl non odio porta, vel
+volutpat ligula volutpat.
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+\emph{Based on your results and their analysis, what new knowledge do
+you take away from your project?}
+
+Phasellus ac consequat nibh, vel condimentum quam. Morbi in est ut odio
+pharetra feugiat a quis nulla. Donec rhoncus eget nunc vitae
+ullamcorper. Sed quis bibendum ex. Nullam non augue nec leo facilisis
+facilisis ullamcorper non turpis. Nullam rhoncus, ipsum non efficitur
+viverra, velit ligula hendrerit felis, porta feugiat eros urna ac justo.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+cubilia curae; Nam gravida consectetur rhoncus. Vivamus suscipit ut
+nulla non vestibulum. Phasellus maximus nisl non odio porta, vel
+volutpat ligula volutpat.
+
 \hypertarget{references}{%
-\section{References}\label{references}}
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
 
 \end{document}
