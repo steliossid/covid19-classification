@@ -48,19 +48,19 @@ where $argmax_{c}P(c)$ is the class c with the highest probability for document 
 
 ## Logistic Regression
 
-In this case, the classes that are going to be predicted are more than two, so Multinomial Logistic Regression is needed. It is often called softmax regression, because it uses a generalization of the sigmoid function, the softmax function. In Multinomial Logistic Regression, a document $d$ is assigned to the class $c$ with the highest probability. These probabilities are computed via the softmax function:
+In this project, the classes that are going to be predicted are more than two, so Multinomial Logistic Regression is needed. It is often called softmax regression, because it uses a generalization of the sigmoid function, the softmax function. In Multinomial Logistic Regression, a document $d$ is assigned to the class $c$, which is the one with the highest probability. These probabilities are computed via the softmax function:
 
 $$P(y=c|x)=\frac{exp(w_cx+b_c)}{\sum_{j=1}^{C}exp(w_jx+b_j)}$$
 
 where $x$ is the input vector and $w$, $b$ are the parameters. [@6]
 
-## Random Forest Classifier
-
-Phasellus ac consequat nibh, vel condimentum quam. Morbi in est ut odio pharetra feugiat a quis nulla. Donec rhoncus eget nunc vitae ullamcorper. Sed quis bibendum ex. Nullam non augue nec leo facilisis facilisis ullamcorper non turpis. Nullam rhoncus, ipsum non efficitur viverra, velit ligula hendrerit felis, porta feugiat eros urna ac justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam gravida consectetur rhoncus. Vivamus suscipit ut nulla non vestibulum. Phasellus maximus nisl non odio porta, vel volutpat ligula volutpat.
-
 ## Decision Tree Classifier
 
-Phasellus ac consequat nibh, vel condimentum quam. Morbi in est ut odio pharetra feugiat a quis nulla. Donec rhoncus eget nunc vitae ullamcorper. Sed quis bibendum ex. Nullam non augue nec leo facilisis facilisis ullamcorper non turpis. Nullam rhoncus, ipsum non efficitur viverra, velit ligula hendrerit felis, porta feugiat eros urna ac justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam gravida consectetur rhoncus. Vivamus suscipit ut nulla non vestibulum. Phasellus maximus nisl non odio porta, vel volutpat ligula volutpat.
+A Decision Tree consists of nodes, which are questions about the value of a variable, edges, which are the results of nodes and the leaf nodes which are the predicted classes. The predicted class is assigned after following a hierarchical structure of nodes and edges that lead to this specific class.
+
+## Random Forest Classifier
+
+Random Forest classifier belongs to ensemble learning and consists of multiple decision trees that operate as a whole, when training the model. Each decision tree in Random Forest predicts a class and then the final class is the one that gets the majority of the votes from all decision trees. This helps prevent overfitting that might happen in classic decison trees as a forest of decision trees protect each other from making errors, unless all trees are headed to the wrong direction.
 
 ## Linear Support Vector Classifier (SVC)
 
@@ -129,7 +129,16 @@ Mauris vestibulum venenatis turpis eu blandit. Sed est tellus, auctor id tortor 
 
 *Present your results in an objective way. Use tables and charts, but do not forget to also include a summary in text form. Do not interpret your results.*
 
-Images here.
+| Model                                        | Accuracy |
+|----------------------------------------------|----------|
+| Recurrent Neural Network (RNN)               | 0.68     |
+| Logistic Regression                          | 0.58     |
+| Stochastic Gradient Descent (SGD) Classifier | 0.57     |
+| Linear Support Vector Classifier (SVC)       | 0.56     |
+| Random Forest Classifier                     | 0.54     |
+| Extreme Gradient Boosting Classifier (XGB)   | 0.53     |
+| Multinomial Naive Bayes                      | 0.50     |
+| Decision Tree Classifier                     | 0.46     |
 
 \newpage
 
